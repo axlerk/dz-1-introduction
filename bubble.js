@@ -1,6 +1,7 @@
 ﻿function bubble() {
 	"use strict";
-	var m = document.forms["form"].elements["unsorted"].value.split(/\s*,\s*/), count, max, i, j;
+	var m, count, i, j, max;
+	m = document.forms["form"].elements["unsorted"].value.split(/\s*,\s*/);
 	count = m.length - 1;
 	for (i = 0; i < count; i++)
 	for (j = 0; j < count - i; j++)
